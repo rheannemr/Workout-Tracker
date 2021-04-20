@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const express = require("express");
 const Workout = require("../models/workout");
 
 router.get("/api/workouts", async (req, res) => {
@@ -41,7 +40,7 @@ router.put("/api/workouts/:id", async (req, res) => {
     try {
         await Workout.findOneAndUpdate(
             {_id: req.params.id},
-            {$push: {exercises:body} },
+            {$push: {exercises: req.body} },
             {new: true}
         )
         .then(data => {
