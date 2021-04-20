@@ -17,6 +17,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
   useFindAndModify: false
 });
 
+const db = mongoose.connection
+db.on("error", (error) => console.log(error));
+db.once("open", () => console.log("Connected to the Database!"))
+
 // routes
 app.use(require("./routes/api"));
 
