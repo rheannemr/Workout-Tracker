@@ -43,7 +43,7 @@ router.put("/api/workouts/:id", async (req, res) => {
             {_id: req.params.id},
             {$push: {exercises:body} },
             {new: true}
-        );
+        )
         .then(data => {
             res.json(data)
         })
