@@ -4,7 +4,7 @@ const morgan = require("morgan")
 const apiRoutes = require("./routes/apiroutes")
 const htmlRoutes = require("./routes/htmlroutes")
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
