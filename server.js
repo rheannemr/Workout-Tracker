@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan")
 const apiRoutes = require("./routes/api")
+const htmlRoutes = require("./routes/html")
 
 const PORT = process.env.PORT || 8080;
-
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
@@ -14,7 +14,9 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 const db = mongoose.connection
@@ -22,7 +24,8 @@ db.on("error", (error) => console.log(error));
 db.once("open", () => console.log("Connected to the Database!"))
 
 // routes
-app.use(require("./routes/api"));
+app.use(apiRoutes);
+app.use(htmlRoutes);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
