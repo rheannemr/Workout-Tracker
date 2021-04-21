@@ -5,6 +5,7 @@ The Workout Tracker is an extremely user friendly application that allows the us
 ## Table of Contents
 
 - [General Info](#general-info)
+- [Link to Deployed Application](#general-info)
 - [Technologies](#technologies)
 - [Demo](#demo)
 - [Author](#author)
@@ -23,6 +24,11 @@ The user should be able to: </br>
   * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.  </br>
 
   * View the total duration of each workout from the past seven workouts on the `stats` page. </br>
+
+## Link to Depoloyed Application
+
+https://fitness-workouts.herokuapp.com/
+
 
 ## Technologies
 
