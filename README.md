@@ -44,7 +44,11 @@ This project is created with:
 
 ## Demo
 
+<<<<<<< HEAD
 - ![Demo Video](https://github.com/rheannemr/./public/assets/WorkoutTracker.gif)
+=======
+![Demo Video](https://github.com/rheannemr/Workout-Tracker/blob/main/WorkoutTracker.gif?raw=true)
+>>>>>>> 5b06c59b99c72b170b2105fafaacbdc38e9aae95
 
 ## Author
 
