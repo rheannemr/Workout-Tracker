@@ -44,6 +44,8 @@ This project is created with:
 
 ## Demo
 
+- ![Demo Video](https://github.com/rheannemr/./public/assets/WorkoutTracker.gif)
+
 ## Author
 
 [Rheanne Reyes](https://github.com/rheannemr)
