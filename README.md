@@ -44,7 +44,7 @@ This project is created with:
 
 ## Demo
 
-![Link to Demo](https://drive.google.com/file/d/1VOxvmJ23DuKZfngwQvA_R8EPr_SG5Uo0/view)
+[Link to Demo](https://drive.google.com/file/d/1VOxvmJ23DuKZfngwQvA_R8EPr_SG5Uo0/view)
 
 ## Author
 
